@@ -1,38 +1,21 @@
+'use client';
 
+import { Cart } from '$components/Cart';
+import { CheckoutForm } from '$components/CheckoutForm';
+import { useCartContext } from '$context/cart/cartContext';
 
+const CheckoutPage = () => {
+  const { cartItems } = useCartContext();
 
+  return (
+    <div className='grid gap-6'>
+      <h1>Checkout This!</h1>
 
-const CheckoutPage = async () => {
-  const dynamicData = await useCheckout();
+      <Cart items={cartItems} />
 
-
-
-  return (<>this is the checkout</>);
-  // const { cartItems, total } = useCart();
-  // const { checkout, loading, error } = useCheckout();
-
-  // const handleCheckout = () => {
-  //     checkout();
-  // };
-
-  // return (
-  //     <div>
-  //     <h1>Checkout</h1>
-  //     <div>
-  //         {cartItems.map((item) => (
-  //         <div key={item.id}>
-  //             <div>{item.name}</div>
-  //             <div>{item.price}</div>
-  //         </div>
-  //         ))}
-  //     </div>
-  //     <div>Total: {total}</div>
-  //     <button onClick={handleCheckout} disabled={loading}>
-  //         Checkout
-  //     </button>
-  //     {error && <div>{error}</div>}
-  //     </div>
-  // );
+      <CheckoutForm />
+    </div>
+  );
 };
 
 export default CheckoutPage;
