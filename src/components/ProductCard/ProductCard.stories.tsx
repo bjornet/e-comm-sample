@@ -17,3 +17,9 @@ export default {
 type Story = StoryObj<typeof ProductCard>;
 
 export const Default: Story = {};
+
+export const MissingData: Story = {
+  args: {
+    name: undefined,
+  },
+};
