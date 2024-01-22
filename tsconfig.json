@@ -26,8 +26,7 @@
 
       // "$config/*": ["src/config/*"],
 
-      // "$api/*": ["src/api/*"],
-      // "$api": ["src/api"],
+      "$api/*": ["src/api/*"],
 
       // "$lib/*": ["src/lib/*"],
       // "$lib": ["src/lib"],
@@ -46,7 +45,7 @@
 
       // "$messages/*": ["src/messages/*"],
 
-      // "$types/*": ["src/types/*"],
+      "$types/*": ["src/types/*"],
 
       "$assets/*": ["public/assets/*"],
 

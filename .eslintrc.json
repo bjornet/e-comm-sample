@@ -1,3 +1,73 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "airbnb", "airbnb-typescript", "prettier"],
+  "rules": {
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "import/prefer-default-export": "off",
+    // Enforce arrow functions for components
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": ["arrow-function", "function-expression"],
+        "unnamedComponents": ["arrow-function", "function-expression"]
+      }
+    ],
+    // Enforce import grouping and order
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+        "newlines-between": "always"
+      }
+    ],
+    // Allow reassigning some params
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": ["state", "res", "req"]
+      }
+    ],
+    // Allow prop spreading in certain circumstances
+    "react/jsx-props-no-spreading": [
+      "error",
+      {
+        "exceptions": ["Component"]
+      }
+    ],
+    // disallow default imports from the react package
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": [
+          {
+            "name": "react",
+            "importNames": ["default"]
+          }
+        ]
+      }
+    ],
+    // suppress errors for missing 'import React' in files. When supressing, we need to re-enable it for files that use JSX
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }]
+  },
+  "overrides": [
+    {
+      "files": ["*.stories.ts?(x)"],
+      "extends": ["plugin:testing-library/react"],
+      "rules": {
+        "react/jsx-props-no-spreading": "off",
+        "import/no-extraneous-dependencies": "off"
+      }
+    },
+    {
+      "files": ["vitest.config.ts"],
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
 }
