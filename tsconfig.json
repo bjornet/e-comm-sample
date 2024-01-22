@@ -21,39 +21,14 @@
     "paths": {
       "$pages": ["src/app"],
       "$pages/*": ["src/app/*"],
-
       "$components/*": ["src/components/*"],
-
-      // "$config/*": ["src/config/*"],
-
       "$api/*": ["src/api/*"],
-
-      // "$lib/*": ["src/lib/*"],
-      // "$lib": ["src/lib"],
-
       "$context/*": ["src/context/*"],
-
-      // "$utils": ["src/utils"],
-
-      // "$hooks": ["src/hooks"],
-
       "$styles/*": ["src/styles/*"],
-
-      // "$icons": ["src/icons"],
-
-      // "$enums/*": ["src/enums/*"],
-
-      // "$messages/*": ["src/messages/*"],
-
       "$types/*": ["src/types/*"],
-
       "$assets/*": ["public/assets/*"],
-
-      // "$storybook/*": [".storybook/*"],
-
-      // "$vendor/*": ["src/vendor/*"]
-    }
+    },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
 }
