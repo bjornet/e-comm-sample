@@ -4,6 +4,7 @@ import {
   FC,
   PropsWithChildren,
   createContext,
+  useCallback,
   useContext,
   useMemo,
   useState,
@@ -30,7 +31,12 @@ export const ProductsProvider: FC<PropsWithChildren<{}>> = ({ children }) => {
     setProducts(res);
   }, []);
 
-  const valueMemoized = useMemo(() => ({ products }), [products]);
+  const getProductById = useCallback(
+    (id: string) => products.products.find((product) => product.id === id),
+    [products]
+  );
+
+  const valueMemoized = useMemo(() => ({ products, getProductById }), [products, getProductById]);
 
   return <ProductsContext.Provider value={valueMemoized}>{children}</ProductsContext.Provider>;
 };
