@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Coffee",
+      "price": 1,
+      "image": "/assets/images/products/coffee.png"
+    },
+    {
+      "id": "2",
+      "name": "Orange",
+      "price": 2,
+      "image": "/assets/images/products/orange.png"
+    },
+    {
+      "id": "3",
+      "name": "Bread",
+      "price": 3,
+      "image": "/assets/images/products/bread.png"
+    }
+  ],
+  "status": "success",
+  "message": "Products fetched successfully"
+}
