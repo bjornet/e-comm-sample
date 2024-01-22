@@ -1,22 +1,25 @@
 {
   "products": [
     {
-      "id": "1",
+      "id": "coffee",
       "name": "Coffee",
       "price": 1,
-      "image": "/assets/images/products/coffee.png"
+      "image": "/assets/images/products/coffee.png",
+      "description": "A hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub."
     },
     {
-      "id": "2",
+      "id": "orange",
       "name": "Orange",
       "price": 2,
-      "image": "/assets/images/products/orange.png"
+      "image": "/assets/images/products/orange.png",
+      "description": "A round juicy citrus fruit with a tough bright reddish-yellow rind."
     },
     {
-      "id": "3",
+      "id": "bread",
       "name": "Bread",
       "price": 3,
-      "image": "/assets/images/products/bread.png"
+      "image": "/assets/images/products/bread.png",
+      "description": "Bread is a staple food prepared from a dough of flour and water, the french love it."
     }
   ],
   "status": "success",
