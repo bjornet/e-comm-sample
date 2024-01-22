@@ -36,7 +36,6 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-storybook": "^0.6.15",
     "eslint-plugin-testing-library": "^6.2.0",
-    "postcss": "^8.4.33",
     "prettier": "^3.2.4",
     "storybook": "^7.6.10",
     "tailwindcss": "^3.3.0",
