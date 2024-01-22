@@ -9,7 +9,7 @@ const ProductList: FC<ProductListProps> = ({ products = [] }) =>
     <ul className="flex gap-6 flex-wrap">
       {products.map(({ id, name, price, image }) => (
         <li key={id}>
-          <ProductCard name={name} price={price} image={image} />
+          <ProductCard id={id} name={name} price={price} image={image} />
         </li>
       ))}
     </ul>

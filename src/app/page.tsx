@@ -5,9 +5,11 @@ import Link from 'next/link';
  */
 const Home = () => (
   <div>
-    <h1>Home</h1>
+    <h1>Welcome to the Nordiska Galleriet assignment e-comm</h1>
 
-    <Link href="/products">Products</Link>
+    <br />
+
+    <strong>Please check out our products:</strong>{" "}<Link href="/products" className='p-2 bg-sky-700 hover:bg-sky-500'>Products</Link>
   </div>
 );
 

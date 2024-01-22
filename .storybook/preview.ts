@@ -7,6 +7,7 @@ import type { Preview } from '@storybook/react';
  * it seems to rely on the next dev server running (not CI friendly and sub-optimal DX).
  */
 import '../.next/static/css/app/layout.css';
+import { CartProviderDecorator, ProductsProviderDecorator } from './decorators';
 
 const preview: Preview = {
   parameters: {
@@ -25,6 +26,7 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [CartProviderDecorator, ProductsProviderDecorator],
 };
 
 export default preview;

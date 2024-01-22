@@ -2,7 +2,7 @@ import { Product } from '$api/products/types';
 
 export type MinicartProps = {
   items: {
-    product: Product;
+    product: Omit<Product, 'description'>;
     quantity: number;
   }[];
 };
