@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nordiska Galleriet E-comm
+
+Where magic happens!
+
+## Description
+
+This is a simple e-commerce sample frontend app built with React and Next.js.
+
+## Technologies
+
+- [Next.js](https://nextjs.org/) for routing and server side rendering
+- [TypeScript](https://www.typescriptlang.org/) for enhanced DX through type safety and intellisense
+- [React](https://reactjs.org/) for the UI
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+- [Eslint](https://eslint.org/) for linting
+- [Prettier](https://prettier.io/) for code formatting
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Node.js](https://nodejs.org/en/) (v18.18.0 or higher)
+- [PNPM](https://pnpm.io/) (v8.4.0 or higher)
+
+## Installation
+
+### 1. Clone the repository
+
+```sh
+git clone https://github.com/bjornet/e-comm-sample.git
+cd e-comm-sample
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Development
 
-## Learn More
+**IMPORTANT!** This app is not ready for production.
 
-To learn more about Next.js, take a look at the following resources:
+Yey, now you can run the app locally!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Start the development server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Run `pnpm dev` to start the development server.
 
-## Deploy on Vercel
+### Component Testing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Run `pnpm storybook` to boot up Storybook and start developing components in isolation.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Linting and Formatting
+
+Linting: Run `pnpm lint` to identify and fix linting issues. Formatting: Run `pnpm format` to format your code using Prettier.
+
+## Building
+
+### Production Build
+
+Run `pnpm build` to build the app for production to the dist folder.
+
+## High Priority Improvements
+
+1. **Cart** The cart is not fully implemented. The cart should be able to add and remove items.
+2. **RSC** The app is not making use of React Server Components. This would be a great fit for the app since it is a good candidate for SSR. This would improve the performance of the app as well as get rid of hard to manage hydration issues.
+
+## Other Improvements
+
+1. **Stability** The codebase would gain a lot from adding a pre-commit hook that runs a baseline of tests and linting. This would ensure that the codebase is stable and consistent. Husky and lint-staged would be a great fit for this.
+2. **Error Handling** The app is missing error handling. This is a must for a production ready app. The app should handle errors from the API and display a user friendly error message.
+3. **Accessibility** The app is missing accessibility features. This is a must for a production ready app. The app should be accessible for all users.
