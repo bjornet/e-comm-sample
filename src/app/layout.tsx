@@ -11,8 +11,8 @@ import '$styles/globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Nordiska Galleriet - Frontend Test',
-  description: 'E-commerce test site for Nordiska Galleriet',
+  title: 'An e-commerce sample site',
+  description: 'Next.js + Tailwind + Storybook + E-commerce',
 };
 
 const RootLayout = ({

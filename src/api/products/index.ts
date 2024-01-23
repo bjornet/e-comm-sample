@@ -18,7 +18,7 @@ const emptyResponse: FetchProductsResonse = {
  */
 export const fetchProducts: FetchProducts = async () => {
   try {
-    // const url = 'https://nordiskagalleriet.se/api/products';
+    // const url = 'https://...';
 
     // const response = await client.GET(url);
 

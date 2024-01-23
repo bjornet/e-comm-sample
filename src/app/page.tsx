@@ -5,7 +5,7 @@ import Link from 'next/link';
  */
 const Home = () => (
   <div>
-    <h1>Welcome to the Nordiska Galleriet assignment e-comm</h1>
+    <h1>Welcome to a E-commerce sample site</h1>
     <br />
     <strong>Please check out our products:</strong>{' '}
     <Link href="/products" className="p-2 bg-sky-700 hover:bg-sky-500">

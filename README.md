@@ -1,6 +1,4 @@
-# Nordiska Galleriet E-comm
-
-Where magic happens!
+# A Next.js Tailwind Storybook E-Commerce Sample
 
 ## Description
 
