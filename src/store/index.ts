@@ -1,1 +1,1 @@
-export { storeManager } from "./storeManager";
+export { storeManager } from './storeManager';

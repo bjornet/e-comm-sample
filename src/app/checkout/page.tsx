@@ -8,7 +8,7 @@ const CheckoutPage = () => {
   const { cartItems } = useCartContext();
 
   return (
-    <div className='grid gap-6'>
+    <div className="grid gap-6">
       <h1>Checkout This!</h1>
 
       <Cart items={cartItems} />

@@ -1,6 +1,6 @@
 export const storeManager = {
   get: (key: string) => {
-    if(typeof window === 'undefined') return null;
+    if (typeof window === 'undefined') return null;
 
     const value = localStorage.getItem(key);
 

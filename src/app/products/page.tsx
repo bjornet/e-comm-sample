@@ -9,7 +9,7 @@ const ProductsPage: FC = () => {
   const { products } = useProductsContext();
 
   return (
-    <div className='grid gap-8'>
+    <div className="grid gap-8">
       <h1>Here are our unique and very expensive products</h1>
 
       {products.status === 'loading' && <p>Loading...</p>}

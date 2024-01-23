@@ -1,4 +1,4 @@
 export enum StoreSegments {
-  CART = "cart",
+  CART = 'cart',
   // AMOUNT = "amount",
 }

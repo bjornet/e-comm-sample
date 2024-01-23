@@ -31,7 +31,9 @@ export const CartProvider: FC<PropsWithChildren<{}>> = ({ children }) => {
    * @note when cartItems is updated would be a good time to persist the cart to localStorage
    * @note when the app loads would be a good time to hydrate the cart from localStorage
    */
-  const [cartItems, setCartItems] = useState<CartItem[]>(storeManager.get(StoreSegments.CART) || []);
+  const [cartItems, setCartItems] = useState<CartItem[]>(
+    storeManager.get(StoreSegments.CART) || []
+  );
 
   useEffect(() => {
     storeManager.set(StoreSegments.CART, cartItems);

@@ -30,7 +30,7 @@ export default {
     ],
   },
   render: (args) => (
-    <div className='flex justify-end'>
+    <div className="flex justify-end">
       <Minicart {...args} />
     </div>
   ),
