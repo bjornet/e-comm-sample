@@ -18,7 +18,6 @@ This is a simple e-commerce sample frontend app built with React and Next.js.
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/en/) (v18.18.0 or higher)
-- [PNPM](https://pnpm.io/) (v8.4.0 or higher)
 
 ## Installation
 
@@ -32,7 +31,7 @@ cd e-comm-sample
 ### 2. Install dependencies
 
 ```sh
-pnpm install
+npm install
 ```
 
 ## Development
@@ -43,21 +42,21 @@ Yey, now you can run the app locally!
 
 ### Start the development server
 
-Run `pnpm dev` to start the development server.
+Run `npm run dev` to start the development server.
 
 ### Component Testing
 
-Run `pnpm storybook` to boot up Storybook and start developing components in isolation.
+Run `npm run storybook` to boot up Storybook and start developing components in isolation.
 
 ### Linting and Formatting
 
-Linting: Run `pnpm lint` to identify and fix linting issues. Formatting: Run `pnpm format` to format your code using Prettier.
+Linting: Run `npm run lint` to identify and fix linting issues. Formatting: Run `npm run format` to format your code using Prettier.
 
 ## Building
 
 ### Production Build
 
-Run `pnpm build` to build the app for production to the dist folder.
+Run `npm run build` to build the app for production to the dist folder.
 
 ## High Priority Improvements
 
