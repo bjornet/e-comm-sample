@@ -1,14 +1,9 @@
-import '../src/styles/globals.css';
-
 import type { Preview } from '@storybook/react';
 
-/**
- * Targeting this file works but it's not ideal.
- * Ideally we would target some Tailwind css output,
- * but I'm not sure how to do that. This solution is a bit janky since
- * it seems to rely on the next dev server running (not CI friendly and sub-optimal DX).
- */
 import { CartProviderDecorator, ProductsProviderDecorator } from './decorators';
+import { viewports } from './config';
+
+import '../src/styles/globals.css';
 
 const preview: Preview = {
   parameters: {
@@ -20,6 +15,7 @@ const preview: Preview = {
         { name: 'dark', value: '#064E3B' },
       ],
     },
+    viewport: viewports,
     controls: {
       matchers: {
         color: /(background|color)$/i,
