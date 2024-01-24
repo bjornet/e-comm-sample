@@ -1,3 +1,5 @@
+import '../src/styles/globals.css';
+
 import type { Preview } from '@storybook/react';
 
 /**
@@ -6,7 +8,6 @@ import type { Preview } from '@storybook/react';
  * but I'm not sure how to do that. This solution is a bit janky since
  * it seems to rely on the next dev server running (not CI friendly and sub-optimal DX).
  */
-import '../.next/static/css/app/layout.css';
 import { CartProviderDecorator, ProductsProviderDecorator } from './decorators';
 
 const preview: Preview = {
